@@ -1,0 +1,41 @@
+{
+  "name": "the-dropdown",
+  "version": "1.0.0",
+  "description": "A quick and easy but lightweight and incredibly customizable dropdown menu creator",
+  "keywords": [
+    "dropdown",
+    "customizable",
+    "lightweight",
+    "sysvisionz",
+    "react",
+    "simple",
+    "premade",
+    "custom",
+    "component"
+  ],
+  "main": "build/index.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "author": "Colin Brennan",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SysVisionz/the-dropdown.git"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.6",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/spdy": "^3.4.9",
+    "@types/validator": "^13.12.2",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.2",
+    "sass": "^1.80.6",
+    "typescript": "^5"
+ }
+}

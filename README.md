@@ -1,4 +1,4 @@
-# sysvisionz-react-dropdown
+# The Dropdown
 
 This module allows you to utilize a simple, highly customizable dropdown menu that can be used in pretty much any way you see fit; a link menu, a traditional selector, however. It allows you to dictate both the direction the menu initially "drops" from the original button, as well as the direction it "pops" outward from that original point, give each part styles or classes, put functions triggered by an item being selected, as well as the menu opening, closing, or every time it is toggled open or closed, control whether the menu is open through a value supplied from elsewhere, dictate if clicking outside the menu will close it or keep it open... or none of these things. It's a handy dandy toolbox of infinite possibilities and ridiculous simplicity!
 
@@ -7,13 +7,13 @@ This module allows you to utilize a simple, highly customizable dropdown menu th
 To install, in terminal type
 
 ```
-	npm i --save sysvisionz-react-dropdown
+	npm i --save the-dropdown
 ```
 
 then, in your react project,
 
 ```
-import Dropdown from 'sysvisionz-react-dropdown';
+import Dropdown from 'the-dropdown';
 ```  
 
 and finally, implement it by including that component within your code:
@@ -124,58 +124,4 @@ As this is a React element, it doesn't run outside of a React environment.
 ## Version History
 <details><summary>1</summary>
 
-1.0 -  
-initial release  
-1.1 -  
-implemented ability to use any JSX element as activating button  
-implemented keepOpen prop.  
-1.2 -  
-resolved location issues with package.json  
-reversed drop and pop for clarity.  
-cleaner implementation of several code sections.  
-1.3 -  
-allowed for multiple dropdowns to be generated.  
-1.4 -  
-added style prop.  
-1.5 -  
-added buttonId and menuId properties  
-added ability to split array elements into ```id``` and ```children``` properties.  
-1.6 -  
-added onToggle, onOpen, and onClose properties.  
-1.7 -  
-added delay and clickableInDelay properties.  
-1.8 -  
-significant refactor for reliability, removal of retrieved redundant boolean on onToggle.  
-1.9 -  
-implementation of leftUp, rightUp, upLeft and downLeft drop options.
-</details>
-
-<details><summary>2</summary>
-
-2.0 -  
-Complete refactor and bugfixes  
-addition of orientation  
-modification of listVisible to isOpen for ease of use  
-significant additions to user control of elements.  
-addition of controlled option.  
-2.1 -  
-Huge bugfix  
-introduction of open and closed automatic class name.  
-now properly allows for animations  </details>
-
-<details><summary>3</summary>
-
-3.0 -  
-Complete refactor, removal of many extraneous prop, actual complete bugfixes.  
-3.1 -  
-Controlled prop reintroduced properly.  
-3.2 -  
-Bugfix on controlled and keepOpen props  </details>
-
-<details><summary>4</summary>
-
-4.0 -  
-Removal of a number of extraneous props: **onChange**, **button**, **menuClass**  
-4.1 -  
-Revamping of the README.md
-</details>	
+1.0 - initial release, full typing included.  

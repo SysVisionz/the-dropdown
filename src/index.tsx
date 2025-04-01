@@ -1,4 +1,4 @@
-import { ReactNode, useState, type FC } from 'react';
+import { ReactNode, useState, type ReactEventHandler, type FC, useRef } from 'react';
 import ContextProvider from './context';
 
 const filterJoin = (arr: (string | [string, boolean])[], joinVal = ' ') => arr.reduce((full: string[], val) => {
@@ -8,20 +8,16 @@ const filterJoin = (arr: (string | [string, boolean])[], joinVal = ' ') => arr.r
 	return full;
 }, []).join(joinVal)
 
-type CoreProps = {
-	className: string,
-	onChange: (value: string) => void,
-	options?: (string | {value: string, content: string | ReactNode})[],
-	onClose?: () => void,
-	onOpen: () => void,
-	animation: 'fade' | 'slide',
-}
 type Pop<D> = Exclude<'up' | 'down' | 'left' | 'right', D extends 'down' ? 'up' : D extends 'up' ? 'down' : D extends 'right' ? 'left' : D extends 'left' ? 'right' : 'up' | 'down' | 'left' | 'right'>;
 
-function Dropdown<D extends 'up' | 'down' | 'left' | 'right' = 'up' | 'down' | 'left' | 'right'>({drop, pop}: {drop?: D, pop?: Pop<D>} = {}) {
+function Dropdown<D extends 'up' | 'down' | 'left' | 'right' = 'up' | 'down' | 'left' | 'right'>({drop, pop, children}: {drop?: D, pop?: Pop<D>, children?: ReactNode}  = {}) {
 	const content = useState<{value: string, content: ReactNode}[]>()
+	const theSelect = useRef<HTMLSelectElement | null>(null)
+	const theOptions = useRef< | null>()
+	const childOptions = useState<ReactNode[]>([])
+	const computedChildren = useState<ReactNode[]>(() => {})
 	return <ContextProvider>
-		
+		{computedChildren}
 	</ContextProvider>
 }
 
